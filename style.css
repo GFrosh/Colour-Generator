@@ -26,6 +26,21 @@ h1 {
     color: #000;
 }
 
+.colours {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    max-width: 85%;
+    overflow-x: hidden;
+}
+
+.colours button {
+    border: solid 1px #000;
+    width: 50px;
+    height: 50px;
+}
+
 /* PALETTE */
 .palette {
     display: flex;
@@ -61,7 +76,7 @@ h1 {
 }
 
 /* HIM BUTTON */
-button {
+.palette button {
     background-color: #888;
     color: #111;
     border: none;
@@ -72,7 +87,7 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:active {
+.palette button:active {
     background-color: #333;
 }
 
@@ -80,16 +95,13 @@ button:active {
 
 /* CLASSIC BORING FOOTER */
 footer {
-    background-color: transparent;
+    background-color: #fff;
     color: #222;
-    
     width: 100%;
     text-align: center;
-    
-    position: fixed;
+    margin-top: 2em;
+    position: sticky;
     bottom: 0;
-    
     padding: 1em;
-    
     box-shadow: 0 2px 6px #222;
 }

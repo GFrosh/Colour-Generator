@@ -4,7 +4,18 @@ function getRandomHex() {
     return "#" + hex.padStart(6, "0");
 }
 
-// CHILL
+// MAIN COLOURS
+const availableColours = ["red", "green", "blue", "yellow"]
+loadPalette(colour) {
+    const coloursCont = document.querySelector(".colours");
+    
+    switch(colour) {
+        case "red":
+    }
+}
+
+
+// FUNDAMENTAL COLOURS 
 function getFundHex(range, mode = "blue") {
     if (!Number.isFinite(range) || range <= 0) return "#000000";
 
